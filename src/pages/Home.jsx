@@ -14,7 +14,7 @@ const Home = () => {
     try {
       if (bmi.length > 0) {
         setLoading(true);
-        const response = await axios.post('http://localhost:5000/get-modalities', { bmi });
+        const response = await axios.post('https://bmi-api-7zyb.onrender.com/get-modalities', { bmi });
         setModalities(response.data);
         setBmi('');
       }
