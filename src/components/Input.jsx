@@ -36,7 +36,7 @@ const Input = ({id, onChange, value, label, name, type, disabled})=>{
         <label htmlFor={id} className="
              absolute 
              text-md
-           text-zinc-400
+           text-black
              duration-150 
              transform 
              -translate-y-3 

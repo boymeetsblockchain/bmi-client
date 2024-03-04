@@ -6,7 +6,7 @@ function Loader() {
     
     <div className="h-screen w-full flex items-center justify-center mx-auto">
       
-      <FadeLoader color="#FFF" />
+      <FadeLoader color="fff" />
     </div>
   );
 }
