@@ -16,6 +16,7 @@ const Home = () => {
         setLoading(true);
         const response = await axios.post('https://bmi-api-7zyb.onrender.com/get-modalities', { bmi });
         setModalities(response.data);
+        toggleModal(); 
         setBmi(''); 
       }
     } catch (error) {
@@ -24,6 +25,7 @@ const Home = () => {
       setLoading(false);
     }
   };
+  
 
   const [showModal, setShowModal] = useState(false);
 
@@ -33,8 +35,8 @@ const Home = () => {
 
   return (
     <main className="bg-black min-h-screen flex flex-col justify-center items-center py-10 px-4 lg:px-8">
-      <h1 className="text-white text-center text-3xl lg:text-4xl font-bold mb-8 capitalize">
-        Enter your BMI <span className="text-blue-500 underline text-sm">
+      <h1 className="text-white text-center text-2xl lg:text-4xl font-bold mb-8">
+        Enter your BMI <span className="text-green-500 underline text-xs md:text-sm">
           <Link to={'/calculate'}>
           Don't Know your BMI?</Link>
         </span>

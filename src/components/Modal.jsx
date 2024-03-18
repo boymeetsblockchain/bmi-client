@@ -15,15 +15,15 @@ const Modal = ({ diet, physicalTherapy, onClose, bmiType}) => {
             <div className="sm:flex sm:items-start">
               
               <div className="mt-3 text-center sm:mt-0 sm:text-left w-full">
-              <p className=" text-center text-4xl mb-4 font-bold"> BMI category: <span className="text-red-500">{bmiType}</span> </p>
+              <p className=" text-center  text-xl md:text-4xl mb-4 font-bold">  <span className="text-red-500">{bmiType}</span> </p>
                 <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">Diet:</h3>
-                <ul className="list-disc list-inside mb-4">
+                <ul className="list-disc list-inside text-left mb-4">
                   {diet.map((item, index) => (
                     <li key={index} className="text-gray-600">{item}</li>
                   ))}
                 </ul>
                 <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">Physical Therapy:</h3>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-inside text-left">
                   {physicalTherapy.map((item, index) => (
                     <li key={index} className="text-gray-600">{item}</li>
                   ))}
